@@ -1,0 +1,74 @@
+/* styles.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-image: url('../img/BackgroundTickets.png');
+  background-size: cover; /* para cubrir todo el fondo */
+  background-repeat: no-repeat; /* para evitar que se repita la imagen */
+
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.products, .cart {
+  flex: 1;
+  padding: 20px;
+  margin: 10px;
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.product {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.product img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.cart {
+  position: sticky;
+  top: 20px;
+  border: 1px solid #ccc;
+}
+
+#cartItems div {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+#total {
+  margin-top: 10px;
+  font-size: 1.2em;
+  font-weight: bold;
+  padding: 10px;
+}

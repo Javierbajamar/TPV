@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Tienda TPV - Panel Principal</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/main.css'>
+</head>
+<body>
+    <div class="first-box">
+        <h1 class="h1" >Tienda TPV</h1>
+        <!---Div con los botones-->
+        <div class="container">
+            <button class="square" onclick="IrPagar()">
+                <img src="img/Pago.png" alt="Pago" />
+            </button>
+            <button class="square" onclick="IrTicket()">
+                <img src="img/Ticket.png" alt="Ticket" />
+            </button>
+            <button class="square" onclick="IrStock()">
+                <img src="img/Stock.png" alt="Stock" />
+            </button>
+            <button class="square" onclick="IrMesas()">
+                <img src="img/Table.png" alt="Mesas" />
+            </button>
+        </div>
+    </div>
+
+
+
+<script>
+    function IrPagar() {
+        window.location.href = "Pago.php"; // Cambia "/Pagar" con la ruta correcta
+    }
+
+    function IrTicket() {
+        window.location.href = "Tickets.php"; // Cambia "/Ticket" con la ruta correcta
+    }
+
+    function IrStock() {
+        window.location.href = "Stock.php"; // No hay slash inicial aquí
+    }
+
+    function IrMesas() {
+        window.location.href = "Mesas"; // Cambia "/Mesas" con la ruta correcta
+    }
+</script>
+</body>
+</html>

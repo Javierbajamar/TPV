@@ -1,0 +1,55 @@
+/* styles.css */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+    background-image: url('../img/BackgroundTickets.png');
+    background-size: cover; /* para cubrir todo el fondo */
+    background-repeat: no-repeat; /* para evitar que se repita la imagen */
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+}
+
+.tickets {
+    margin: auto;
+    max-width: 800px;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.ticket {
+    margin-bottom: 20px;
+    padding: 20px;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.ticket h2 {
+    color: #007BFF;
+    margin-bottom: 10px;
+}
+
+.ticket p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #666;
+}
+
+.items p {
+    margin: 5px 0;
+    padding-left: 20px;
+    color: #444;
+}
+
+.items {
+    margin-top: 10px;
+    border-left: 3px solid #007BFF;
+    padding-left: 10px;
+}
