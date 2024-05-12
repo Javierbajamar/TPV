@@ -7,6 +7,7 @@
 </head>
 <body>
 <div class="container">
+    <a href="#" onclick="window.history.back();" class="back-button">Atrás</a>
     <div class="products">
         <h2>Productos</h2>
         <!-- Productos obtenidos de la base de datos -->
@@ -38,7 +39,7 @@
         <h2>Cesta</h2>
         <div id="cartItems"></div>
         <div id="total">Total: 0€</div>
-        <input type="number" id="customerPayment" placeholder="Dinero recibido" step="0.01" />
+        <input type="number" id="customerPayment" placeholder="Dinero recibido" step="0.01"/>
         <button onclick="simulatePayment()">Calcular Cambio</button>
         <div id="changeDue">Cambio: 0€</div>
         <button onclick="resetTransaction()">Limpiar</button>

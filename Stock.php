@@ -22,9 +22,10 @@
     </script>
 
 
-
 </head>
 <body>
+<a href="#" onclick="window.history.back();" class="back-button">Atrás</a>
+
 <h2>Stock Elegante</h2>
 <div class="search-container">
     <input type="text" id="searchBox" placeholder="Buscar producto..." oninput="searchProduct()">

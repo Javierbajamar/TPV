@@ -8,6 +8,8 @@
 <body>
 <h1>Tickets de Compra</h1>
 <div class="tickets">
+    <a href="#" onclick="window.history.back();" class="back-button">Atrás</a>
+
     <?php
     $conn = new PDO("mysql:host=localhost;dbname=tpv", 'root', 'admin');
     $stmt = $conn->query("SELECT * FROM tickets ORDER BY created_at DESC");
