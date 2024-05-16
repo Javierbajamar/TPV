@@ -24,7 +24,7 @@
 
 </head>
 <body>
-<a href="#" onclick="window.history.back();" class="back-button">Atrás</a>
+<a href="Main.html" class="back-button">Atrás</a>
 
 <h2>Stock </h2>
 <div class="search-container">

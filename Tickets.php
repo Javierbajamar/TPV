@@ -8,7 +8,7 @@
 <body>
 <h1>Tickets de Compra</h1>
 <div class="tickets">
-    <a href="#" onclick="window.history.back();" class="back-button">Atrás</a>
+    <a href="Main.html" class="back-button">Atrás</a>
 
     <?php
     try {

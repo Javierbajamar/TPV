@@ -7,7 +7,7 @@
 </head>
 <body>
 <div class="container">
-    <a href="#" onclick="window.history.back();" class="back-button">Atrás</a>
+    <a href="Main.html" class="back-button">Atrás</a>
     <div class="products">
         <h2>Productos</h2>
         <!-- Productos obtenidos de la base de datos -->
