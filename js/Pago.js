@@ -29,6 +29,7 @@ function simulatePayment() {
         return;
     }
     let changeDue = customerPayment - total;
+    document.getElementById('changeDue').textContent = `Cambio: ${changeDue.toFixed(2)}€`;
 
     // Preparar los datos del ticket para enviar al servidor
     let cartItems = document.querySelectorAll('#cartItems div');
@@ -59,13 +60,14 @@ function simulatePayment() {
         .then(data => {
             if (data.success) {
                 alert('Compra registrada con éxito.');
-                resetTransaction(); // Reiniciar transacción después de registrar
+                // No reiniciar la transacción automáticamente
             } else {
                 alert('Error al registrar la compra.');
             }
         })
         .catch(error => console.error('Error:', error));
 }
+
 
 // Resetear la transacción para el siguiente cliente
 function resetTransaction() {

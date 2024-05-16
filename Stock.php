@@ -19,14 +19,13 @@
                 }
             }
         }
+
     </script>
-
-
 </head>
 <body>
 <a href="Main.html" class="back-button">Atrás</a>
 
-<h2>Stock </h2>
+<h2>Stock</h2>
 <div class="search-container">
     <input type="text" id="searchBox" placeholder="Buscar producto..." oninput="searchProduct()">
 </div>

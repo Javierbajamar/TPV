@@ -9,7 +9,6 @@
 <body>
 <div class="header">
     <a href="Main.html" class="back-button">Atrás</a>
-
     <h1 class="h1">Panel de Control - Tienda TPV</h1>
 </div>
 
@@ -39,10 +38,16 @@
         fetch('dashboard_data.php')
             .then(response => response.json())
             .then(data => {
+                if (data.error) {
+                    console.error(data.error);
+                    return;
+                }
+
                 document.getElementById('ventas-hoy').innerText = data.ventas_hoy + ' €';
                 document.getElementById('ventas-mes').innerText = data.ventas_mes + ' €';
 
                 let productosList = document.getElementById('productos-mas-vendidos');
+                productosList.innerHTML = ''; // Asegurarse de que la lista esté vacía antes de agregar elementos
                 data.productos_mas_vendidos.forEach(producto => {
                     let li = document.createElement('li');
                     li.innerText = `${producto.nombre} - ${producto.cantidad} unidades`;
@@ -69,7 +74,8 @@
                         }
                     }
                 });
-            });
+            })
+            .catch(error => console.error('Error:', error));
     });
 </script>
 </body>

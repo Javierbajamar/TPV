@@ -4,8 +4,8 @@ body {
     background-color: #f4f4f4;
     color: #333;
     background-image: url('../img/BackgroundTickets.png');
-    background-size: cover; /* para cubrir todo el fondo */
-    background-repeat: no-repeat; /* para evitar que se repita la imagen */
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 h2 {
@@ -27,6 +27,9 @@ h2 {
     width: 220px;
     overflow: hidden;
     margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .card img {
