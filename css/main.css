@@ -35,3 +35,39 @@ h1 {
     font-size: 2em;
     color: white; /* Ajusta el color para mejor visibilidad */
 }
+
+.copyright {
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #f1f1f1;
+    border-top: 1px solid #e1e1e1;
+}
+
+.copyright p {
+    margin: 0;
+    font-size: 14px;
+    color: #333;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #ffffff;
+    border-bottom: 1px solid #e1e1e1;
+    z-index: 1000; /* Asegura que el encabezado esté por encima de otros elementos */
+}
+
+.header .h1 {
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Ajusta el contenido para que no quede oculto debajo del encabezado */
+.first-box {
+    padding-top: 60px; /* Ajusta este valor según la altura del encabezado */
+}

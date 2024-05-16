@@ -8,8 +8,12 @@
     <link rel='stylesheet' type='text/css' media='screen' href='css/main.css'>
 </head>
 <body>
-<div class="first-box">
+
+<div class="header">
     <h1 class="h1">Tienda TPV</h1>
+</div>
+
+<div class="first-box">
     <!---Div con los botones-->
     <div class="container">
         <button class="square" onclick="IrPagar()">
@@ -28,6 +32,10 @@
 </div>
 
 
+<div class="copyright">
+    <p>&copy; 2024 Tienda TPV. Todos los derechos reservados.</p>
+</div>
+
 <script>
     function IrPagar() {
         window.location.href = "Pago.php"; // Cambia "/Pagar" con la ruta correcta
@@ -42,7 +50,7 @@
     }
 
     function IrMesas() {
-        window.location.href = "Mesas"; // Cambia "/Mesas" con la ruta correcta
+        window.location.href = "Registro.html"; // Cambia "/Mesas" con la ruta correcta
     }
 </script>
 </body>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Panel de Control - Tienda TPV</title>
+    <link rel="stylesheet" href="css/dashboard.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+<div class="header">
+    <a href="#" onclick="window.history.back();" class="back-button">Atrás</a>
+
+    <h1 class="h1">Panel de Control - Tienda TPV</h1>
+</div>
+
+<div class="container">
+    <div class="card">
+        <h2>Resumen de Ventas</h2>
+        <p>Total Ventas Hoy: <span id="ventas-hoy"></span></p>
+        <p>Total Ventas Este Mes: <span id="ventas-mes"></span></p>
+    </div>
+    <div class="card">
+        <h2>Productos Más Vendidos</h2>
+        <ul id="productos-mas-vendidos"></ul>
+    </div>
+    <div class="card">
+        <h2>Ingresos Diarios</h2>
+        <canvas id="ingresos-diarios"></canvas>
+    </div>
+</div>
+
+<!-- Div de copyright -->
+<div class="copyright">
+    <p>&copy; 2024 Tienda TPV. Todos los derechos reservados.</p>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        fetch('dashboard_data.php')
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById('ventas-hoy').innerText = data.ventas_hoy + ' €';
+                document.getElementById('ventas-mes').innerText = data.ventas_mes + ' €';
+
+                let productosList = document.getElementById('productos-mas-vendidos');
+                data.productos_mas_vendidos.forEach(producto => {
+                    let li = document.createElement('li');
+                    li.innerText = `${producto.nombre} - ${producto.cantidad} unidades`;
+                    productosList.appendChild(li);
+                });
+
+                let ctx = document.getElementById('ingresos-diarios').getContext('2d');
+                new Chart(ctx, {
+                    type: 'line',
+                    data: {
+                        labels: data.ingresos_diarios.labels,
+                        datasets: [{
+                            label: 'Ingresos Diarios',
+                            data: data.ingresos_diarios.data,
+                            borderColor: 'rgba(75, 192, 192, 1)',
+                            borderWidth: 1
+                        }]
+                    },
+                    options: {
+                        scales: {
+                            y: {
+                                beginAtZero: true
+                            }
+                        }
+                    }
+                });
+            });
+    });
+</script>
+</body>
+</html>

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Stock Elegante</title>
+    <title>Stock TPV</title>
     <link rel='stylesheet' type='text/css' media='screen' href='css/Stockl.css'>
     <script>
         function searchProduct() {
@@ -13,9 +13,9 @@
                 let productName = cards[i].querySelector('h3').textContent.toLowerCase();
 
                 if (productName.includes(input)) {
-                    cards[i].style.display = "flex";  // Aseguramos que la tarjeta se muestre si coincide
+                    cards[i].style.display = "flex";
                 } else {
-                    cards[i].style.display = "none";  // Ocultamos la tarjeta si no coincide
+                    cards[i].style.display = "none";
                 }
             }
         }
@@ -26,7 +26,7 @@
 <body>
 <a href="#" onclick="window.history.back();" class="back-button">Atrás</a>
 
-<h2>Stock Elegante</h2>
+<h2>Stock </h2>
 <div class="search-container">
     <input type="text" id="searchBox" placeholder="Buscar producto..." oninput="searchProduct()">
 </div>
