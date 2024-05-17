@@ -41,6 +41,7 @@ Este proyecto es una aplicación de terminal punto de venta (TPV) diseñada para
     ```
 2. Configura tu servidor web (XAMPP, WAMP, etc.) y coloca los archivos en el directorio adecuado.
 3. Asegúrate de tener configurada una base de datos compatible y actualiza las credenciales en los archivos PHP correspondientes.
+4. Tienes el script de la base de datos en Script.txt
 
 ## Uso
 
