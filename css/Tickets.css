@@ -5,8 +5,8 @@ body {
     margin: 0;
     padding: 20px;
     background-image: url('../img/BackgroundTickets.png');
-    background-size: cover; /* para cubrir todo el fondo */
-    background-repeat: no-repeat; /* para evitar que se repita la imagen */
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 h1 {

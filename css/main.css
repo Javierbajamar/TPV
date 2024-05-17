@@ -3,23 +3,23 @@ body {
     padding: 0;
     height: 100vh;
     background-image: url('../img/background.png');
-    background-size: cover; /* para cubrir todo el fondo */
-    background-repeat: no-repeat; /* para evitar que se repita la imagen */
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .container {
     margin-top: 5%;
     display: grid;
-    grid-template-columns: repeat(3, 300px); /* Dos columnas de 300px de ancho */
-    grid-template-rows: repeat(2, 300px); /* Dos filas de 300px de alto */
-    gap: 20px; /* Espacio entre las imágenes */
+    grid-template-columns: repeat(3, 300px);
+    grid-template-rows: repeat(2, 300px);
+    gap: 20px;
     justify-content: center;
 }
 
 .square {
-    width: 300px; /* Ancho de cada cuadrado */
-    height: 300px; /* Altura de cada cuadrado */
-    overflow: hidden; /* Para que la imagen no se desborde */
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
 }
 
 .square img {
@@ -33,7 +33,7 @@ h1 {
     top: 10px;
     width: 100%;
     font-size: 2em;
-    color: white; /* Ajusta el color para mejor visibilidad */
+    color: white;
 }
 
 .copyright {
@@ -58,7 +58,7 @@ h1 {
     width: 100%;
     background-color: #ffffff;
     border-bottom: 1px solid #e1e1e1;
-    z-index: 1000; /* Asegura que el encabezado esté por encima de otros elementos */
+    z-index: 1000;
 }
 
 .header .h1 {
@@ -67,7 +67,7 @@ h1 {
     text-align: center;
 }
 
-/* Ajusta el contenido para que no quede oculto debajo del encabezado */
+
 .first-box {
-    padding-top: 60px; /* Ajusta este valor según la altura del encabezado */
+    padding-top: 60px;
 }
