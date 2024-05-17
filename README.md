@@ -1,4 +1,4 @@
-
+![image](https://github.com/Javierbajamar/TPV/assets/73912666/1d7bf275-4bcb-48a7-8195-4f7701ec2388)
 # SuperCheckOut TPV (Terminal Punto de Venta)
 
 Proyecto de Integración
@@ -60,3 +60,20 @@ Este proyecto es una aplicación de terminal punto de venta (TPV) diseñada para
 ## Licencia
 
 Este proyecto está bajo la Licencia MIT. Ver el archivo [LICENSE](LICENSE) para más detalles.
+
+![image](https://github.com/Javierbajamar/TPV/assets/73912666/b16b1da0-489a-4873-bbf9-b8eb2ffa444a)
+
+![image](https://github.com/Javierbajamar/TPV/assets/73912666/af42e82e-c6d1-47dc-8480-28a2f7ce338c)
+
+![image](https://github.com/Javierbajamar/TPV/assets/73912666/99327070-9f93-4f2d-adae-4f7ec2b8490f)
+
+![image](https://github.com/Javierbajamar/TPV/assets/73912666/4a3f4369-6cb1-40b8-ab18-3e45cbdc5227)
+
+![image](https://github.com/Javierbajamar/TPV/assets/73912666/4bfee96d-408c-474f-a492-3c67a8a1a83f)
+
+![image](https://github.com/Javierbajamar/TPV/assets/73912666/bf7700e0-5093-41b8-b9ea-769f15eb02c8)
+
+![image](https://github.com/Javierbajamar/TPV/assets/73912666/52a35c94-4773-4039-b7c8-0200674b785a)
+
+
+
