@@ -25,7 +25,11 @@
 
             while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
                 echo "<div class='product' data-id='{$row['id']}' data-price='{$row['precio']}'>";
-                echo "<img src='img/{$row['imagen']}' alt='{$row['nombre']}' style='width: 100px;'>";
+                if (filter_var($row['imagen'], FILTER_VALIDATE_URL)) {
+                    echo "<img src='{$row['imagen']}' alt='{$row['nombre']}' style='width: 100px;'>";
+                } else {
+                    echo "<img src='img/{$row['imagen']}' alt='{$row['nombre']}' style='width: 100px;'>";
+                }
                 echo "<span>{$row['nombre']} - {$row['precio']}€</span>";
                 echo "<button onclick='addToCart({$row['id']})'>Añadir</button>";
                 echo "</div>";

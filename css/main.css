@@ -10,7 +10,7 @@ body {
 .container {
     margin-top: 5%;
     display: grid;
-    grid-template-columns: repeat(2, 300px); /* Dos columnas de 300px de ancho */
+    grid-template-columns: repeat(3, 300px); /* Dos columnas de 300px de ancho */
     grid-template-rows: repeat(2, 300px); /* Dos filas de 300px de alto */
     gap: 20px; /* Espacio entre las imágenes */
     justify-content: center;

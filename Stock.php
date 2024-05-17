@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <title>Stock TPV</title>
@@ -19,7 +19,6 @@
                 }
             }
         }
-
     </script>
 </head>
 <body>
@@ -46,7 +45,11 @@
 
         while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
             echo "<div class='card'>";
-            echo "<img src='/img/" . $row['imagen'] . "' alt='Imagen del producto'>";
+            if (filter_var($row['imagen'], FILTER_VALIDATE_URL)) {
+                echo "<img src='{$row['imagen']}' alt='Imagen del producto'>";
+            } else {
+                echo "<img src='/img/{$row['imagen']}' alt='Imagen del producto'>";
+            }
             echo "<h3>" . $row['nombre'] . "</h3>";
             echo "<p>" . $row['precio'] . " €</p>";
             echo "</div>";
