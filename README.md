@@ -1,4 +1,3 @@
-![image](https://github.com/Javierbajamar/TPV/assets/73912666/1d7bf275-4bcb-48a7-8195-4f7701ec2388)
 # SuperCheckOut TPV (Terminal Punto de Venta)
 
 Proyecto de Integración
