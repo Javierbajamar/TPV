@@ -1,0 +1,43 @@
+CREATE TABLE productos (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR(100) NOT NULL,
+    imagen VARCHAR(255) NOT NULL,
+    precio DECIMAL(10, 2) NOT NULL
+);
+
+CREATE TABLE usuarios (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(50) NOT NULL,
+    password VARCHAR(100) NOT NULL
+);
+CREATE TABLE tickets (
+    ticket_id INT AUTO_INCREMENT PRIMARY KEY,
+    total DECIMAL(10, 2) NOT NULL,
+    payment_received DECIMAL(10, 2) NOT NULL,
+    change_given DECIMAL(10, 2) NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE ticket_items (
+    item_id INT AUTO_INCREMENT PRIMARY KEY,
+    ticket_id INT,
+    product_id INT,
+    quantity INT,
+    unit_price DECIMAL(10, 2),
+    FOREIGN KEY (ticket_id) REFERENCES tickets(ticket_id),
+    FOREIGN KEY (product_id) REFERENCES productos(id)
+);
+
+
+INSERT INTO usuarios (username, password) VALUES
+('javier', 'admin');
+
+
+INSERT INTO productos (nombre, imagen, precio) VALUES
+('Hamburguesa', 'Hamburguesa.png', 10.99),
+('Ensalada', 'Ensalada.png', 8.00),
+('Macarrones', 'Macarrones.png', 8.50),
+('Pan','Pan.png',2.00),
+('Pizza','Pizza.png',7.00),
+('Platano','Platano.png',1.00),
+('Tomate','Tomate.png',1.00);
